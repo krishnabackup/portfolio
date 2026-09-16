@@ -32,8 +32,6 @@ export default function Terminal() {
         setTimeout(step, 90)
       }
     }
-
-    // Wait for the headline reveal to finish before typing starts
     const startTimer = setTimeout(step, 1300)
     return () => {
       cancelled = true
@@ -46,14 +44,14 @@ export default function Terminal() {
       initial={reduceMotion ? false : { opacity: 0, scale: 0.94 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8, delay: 0.6, ease: 'easeOut' }}
-      className="glass relative z-10 rounded-[20px] p-6 shadow-[0_30px_60px_-24px_rgba(0,0,0,0.65)]"
+      className="glass relative z-10 w-full max-w-135 rounded-[20px] p-4 shadow-[0_30px_60px_-24px_rgba(0,0,0,0.65)] sm:p-6"
     >
       <div className="mb-5 flex gap-2">
         <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f56]" />
         <span className="h-2.5 w-2.5 rounded-full bg-[#ffbd2e]" />
         <span className="h-2.5 w-2.5 rounded-full bg-[#27c93f]" />
       </div>
-      <pre className="min-h-[172px] whitespace-pre font-mono text-[0.86rem] leading-relaxed text-white">
+      <pre className="min-h-43 overflow-x-auto whitespace-pre font-mono text-[0.72rem] leading-relaxed text-white sm:text-[0.86rem]">
         {text}
         {done && (
           <span className="animate-blink ml-0.5 inline-block h-[1em] w-[7px] translate-y-[2px] bg-cyan align-text-bottom" />

@@ -49,7 +49,7 @@ export default function Contact() {
           <MagneticEmail />
         </div>
 
-        <div className="mt-9 flex gap-3.5">
+        <div className="mt-9 flex flex-wrap gap-3.5">
           {profile.socials.map((s) => (
             <a
               key={s.name}

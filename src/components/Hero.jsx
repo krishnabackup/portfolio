@@ -6,19 +6,19 @@ export default function Hero() {
   const reduceMotion = useReducedMotion()
 
   return (
-    <section id="hero" className="relative flex min-h-[100svh] items-center pb-16 pt-[130px]">
+    <section id="hero" className="relative flex min-h-svh items-center pb-16 pt-32.5">
       <motion.div
         className="orb -top-10 right-[18%] h-80 w-80 bg-violet"
         animate={reduceMotion ? {} : { y: [0, 22, 0], x: [0, -14, 0] }}
         transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
       />
       <motion.div
-        className="orb -right-8 -bottom-5 h-[260px] w-[260px] bg-cyan"
+        className="orb -right-8 -bottom-5 h-65 w-65 bg-cyan"
         animate={reduceMotion ? {} : { y: [0, -18, 0], x: [0, 16, 0] }}
         transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut', delay: 0.4 }}
       />
 
-      <div className="relative z-10 mx-auto grid w-full max-w-[1140px] grid-cols-1 items-center gap-16 px-6 md:grid-cols-[1.15fr_0.85fr]">
+      <div className="relative z-10 mx-auto grid w-full max-w-285 grid-cols-1 items-center gap-16 px-6 md:grid-cols-[1.15fr_0.85fr]">
         <div>
           <motion.div
             initial={reduceMotion ? false : { opacity: 0, y: 10 }}
@@ -26,7 +26,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mb-5 flex items-center gap-2.5 text-sm text-mist"
           >
-            <span className="animate-pulse-dot h-2 w-2 flex-shrink-0 rounded-full bg-green-400 shadow-[0_0_0_4px_rgba(74,222,128,0.15)]" />
+            <span className="animate-pulse-dot h-2 w-2 shrink-0 rounded-full bg-green-400 shadow-[0_0_0_4px_rgba(74,222,128,0.15)]" />
             {profile.statusLine}
           </motion.div>
 
@@ -36,7 +36,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.25 }}
             className="mb-3 font-mono text-sm text-cyan"
           >
-            {profile.name} — {profile.role}
+            {profile.role}
           </motion.div>
 
           <h1 className="font-mono text-[clamp(2.3rem,5.4vw,3.8rem)] font-semibold leading-[1.12] tracking-tight">
@@ -67,7 +67,7 @@ export default function Hero() {
             initial={reduceMotion ? false : { opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.05 }}
-            className="mt-9 flex flex-wrap gap-4"
+            className="mt-9 flex flex-col gap-4 sm:flex-row sm:flex-wrap"
           >
             <a href="#projects" className="btn btn--primary">
               View my work

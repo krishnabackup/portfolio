@@ -9,13 +9,16 @@ import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Education from './components/Education'
+import { useState } from 'react'
+import ResumeModal from './components/ResumeMode'
 
 export default function App() {
+  const [isModelOpen,setIsModelopen] = useState(false)
   return (
     <div className="relative">
       <div className="bg-glow pointer-events-none fixed inset-0 z-0" />
       <Cursor />
-      <Navbar />
+      <Navbar onResumeClick={() => setIsModelopen(true)}/>
       <main className="relative z-1">
         <Hero />
         <Highlights />
@@ -25,6 +28,7 @@ export default function App() {
         <Experience />
         <Education/>
         <Contact />
+        <ResumeModal isOpen={isModelOpen} onClose={() => setIsModelopen(false)}/>
       </main>
       <Footer />
     </div>

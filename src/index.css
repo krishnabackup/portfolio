@@ -15,11 +15,36 @@ html {
   background: var(--color-ink);
 }
 
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   background: var(--color-ink);
   color: #e9edf7;
   font-family: var(--font-sans);
   overflow-x: hidden;
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .chip {
+    padding: 8px 14px;
+  }
 }
 
 section[id] {

@@ -1,5 +1,7 @@
-import skillFlowImage from "../assets/projects/image.png"
-
+import skillFlowImage from "../../public/assets/projects/skillflow.png"
+import  reflateImage from "../../public/assets/projects/reflate.png"
+import HDP from '../../public/assets/projects/HDP.png'
+import KeralaimImage from '../../public/assets/projects/Keralaim.png'
 export const profile = {
   name: 'Krishna Darsh E K',
   initials: 'KD',
@@ -10,9 +12,8 @@ export const profile = {
   phone: '+91 7902388445',
   resumeUrl: '#',
   socials: [
-    { label: 'GH', name: 'GitHub', url: 'https://github.com/krishnadarsh' },
-    { label: 'in', name: 'LinkedIn', url: 'https://www.linkedin.com/in/krishna-darsh-e-k' },
-    { label: 'X', name: 'X / Twitter', url: '#' },
+    { label: 'GH', name: 'GitHub', url: 'https://github.com/krishnabackup2002' },
+    { label: 'in', name: 'LinkedIn', url: 'https://www.linkedin.com/in/krishna-darsh-ek/' },
   ],
 }
 
@@ -33,7 +34,7 @@ export const heroHeadlineLines = [
 ]
 
 export const heroLead =
-  'Full-stack developer with AI/ML specialization, building reliable web applications, intelligent workflows, and impactful data-driven solutions from frontend to backend to model integration.'
+  'Full-stack developer with AI/ML specialization, building reliable web applications, intelligent workflows, and impactful data driven solutions from frontend to backend to model integration.'
 
 export const heroKeyStack = ['React', 'Node.js', 'Python', 'LLM APIs', 'PostgreSQL', 'MongoDB', 'AI/ML']
 
@@ -48,19 +49,19 @@ export const highlights = [
     icon: 'Layers',
     title: 'Blends full-stack and AI/ML thinking',
     description:
-      'Works comfortably across frontend, backend, databases, and model-driven features to create practical, production-ready solutions.',
+      'Works comfortably across frontend, backend, databases, and model driven features to create practical, production-ready solutions.',
   },
   {
     icon: 'MessagesSquare',
     title: 'Clear communicator and fast learner',
     description:
-      'Explains technical decisions clearly, collaborates with cross-functional teams, and adapts quickly to new tools, frameworks, and problem spaces.',
+      'Explains technical decisions clearly, collaborates with cross functional teams, and adapts quickly to new tools, frameworks, and problem spaces.',
   },
 ]
 
 export const about = {
   paragraphs: [
-    'I am a full-stack developer and AI/ML engineer with a Master of Computer Applications specialization in Artificial Intelligence and Machine Learning. My work spans modern web application development, intelligent automation, and data-driven product engineering.',
+    'I am a full-stack developer and AI/ML engineer with a Master of Computer Applications specialization in Artificial Intelligence and Machine Learning. My work spans modern web application development, intelligent automation, and data driven product engineering.',
     'I enjoy building complete solutions that combine user-facing interfaces, backend systems, and AI capabilities. From React and Node.js applications to machine learning workflows and LLM-integrated features, I focus on delivering practical products that are scalable, maintainable, and useful in the real world.',
   ],
   stats: [
@@ -89,23 +90,23 @@ export const skillGroups = [
 export const projects = [
   {
     featured: true,
-    name: 'SkillFlow | MERN Stack | React, Node.js, MongoDB, Tailwind CSS, Gemini AI',
+    liveDemo : true,
+    name: 'SkillFlow : Smart Roadmap Generation with LMS',
     description:
       'Built a responsive learning platform using React, Node.js, MongoDB, Tailwind CSS, and Zustand with JWT authentication and role-based learning workflows. Developed reusable dashboard, roadmap, course and quiz components with a paginated data view and REST API integration. Implemented YouTube learning progress tracking and certificate previews using browser Blob APIs. Integrated Google Gemini to generate personalized learning roadmaps and adaptive quizzes.',
     tags: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS', 'Gemini AI'],
     image: skillFlowImage,
     demoUrl: 'https://skill-flow-tau.vercel.app/',
-    codeUrl: 'https://github.com/krishnadarsh/SkillFlow.git',
-    mockup: 'chart',
+    codeUrl: 'https://github.com/krishnabakup2002/SkillFlow.git',
   },
   {
-    name: 'Keralam — AI-Powered Citizen Platform',
+    name: 'Keralam : AI-Powered Citizen Platform',
     description:
       'Developed an AI-powered civic platform for government scheme discovery, complaint management, disaster alerts, and citizen assistance. The platform combines recommendation logic, AI-powered assistance, and multilingual support to improve citizen experience and access to public services.',
     tags: ['React Native', 'Node.js', 'Express.js', 'MongoDB', 'LLM'],
+    image : KeralaimImage,
     demoUrl: '#',
-    codeUrl: 'https://github.com/krishnadarsh/Keralam.git',
-    mockup: 'lines',
+    codeUrl: 'https://github.com/krishnabakup2002/Keralam.git',
   },
   {
     name: 'Pneumonia Prediction from Chest X-Rays',
@@ -114,8 +115,26 @@ export const projects = [
     tags: ['Python', 'Deep Learning', 'Computer Vision', 'TensorFlow'],
     demoUrl: '#',
     codeUrl: 'https://github.com/krishnadarsh/Heart-Disease-Prediction-using-ML.git',
-    mockup: 'bars',
   },
+  {
+    name: 'Heart Disease Prediction using ML',
+    description:
+      'Developed a machine learning classification model using Python to predict heart disease from user input. Performed data validation, exploratory analysis, preprocessing, and model evaluation and comparision to select best model.',
+    tags: ['Python', 'Machine Learning', 'Classification', 'FAST API' , 'React'],
+    image : HDP,
+    demoUrl: 'https://heart-disease-prediction-using-ml-nine.vercel.app',
+    codeUrl: 'https://github.com/krishnadarsh/Heart-Disease-Prediction-using-ML.git',
+  },
+  {
+    name: 'Reflate : Department Feast website',
+    description:
+      'Developed a website for ecnomics department feast to get the participant enroll in different events.Backend is connected with google docs.',
+    tags: ['HTML', 'CSS' ,'JS'],
+    image: reflateImage, 
+    liveDemo : true,
+    demoUrl: 'https://reflatefeast.netlify.app/',
+    codeUrl: 'https://github.com/krishnadarsh/Heart-Disease-Prediction-using-ML.git',
+  }
 ]
 
 export const experience = [
@@ -123,7 +142,7 @@ export const experience = [
     period: 'Feb 2026 — May 2026',
     role: 'Full Stack Developer Intern (Technical Lead) | UPTOSKILLS',
     description:
-      'Promoted to Technical Lead after leading a team to end-to-end product development across frontend, backend, and data workflows. Built a full-stack learning platform with React, Node.js, MongoDB, and REST API integrations. Managed 10 backend developer interns, coordinated sprint execution, and streamlined delivery for the product roadmap.',
+      'Promoted to Technical Lead after leading a team to covert the database from Mongodb to Postgresql. Built DND features , implemented api response and query optmization in full-stack AI Resume Builder. Managed 70+ interns, coordinated sprint execution, planned the design and implemntation of a new project and streamlined delivery for the project.',
   },
   {
     period: 'Jan 2026 — May 2026',
@@ -142,7 +161,7 @@ export const experience = [
 export const education = [
   {
     period: 'July 2024 — July 2026',
-    role: 'MCA — Artificial Intelligence & Machine Learning',
+    role: 'MCA in Artificial Intelligence & Machine Learning',
     cgpa: 9.6,
     institution: 'SRM University, Chennai',
     description:
