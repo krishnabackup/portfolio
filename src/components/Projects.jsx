@@ -51,7 +51,7 @@ export default function Projects() {
               transition={{ duration: 0.6 }}
               className="glass flex flex-col gap-4 rounded-2xl p-4 sm:p-5 md:p-7"
             >
-              <img src={project.image} alt={project.name} className="h-auto w-full rounded-xl object-cover" />
+              <img src={project.image} className="h-auto w-full rounded-xl object-cover" />
               <h3 className="text-[1.15rem]">{project.name}</h3>
               <p className="text-[0.95rem] text-mist">{project.description}</p>
               <div className="flex flex-wrap gap-2">
