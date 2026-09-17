@@ -1,5 +1,3 @@
-import AIresume from '../../public/assets/resumes/Krishna_Darsh_E_K_Resume_AI.pdf'
-import Fullstackresume from '../../public/assets/resumes/Krishna_Darsh_E_K_Resume.pdf'
 export default function ResumeModal({ isOpen, onClose }) {
   if (!isOpen) return null
 
@@ -24,7 +22,7 @@ export default function ResumeModal({ isOpen, onClose }) {
 
         <div className="mt-6 grid gap-3">
           <a
-            href={AIresume}
+            href='/assets/resumes/Krishna_Darsh_E_K_Resume_AI.pdf'
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-xl border p-4"
@@ -34,7 +32,7 @@ export default function ResumeModal({ isOpen, onClose }) {
           </a>
 
           <a
-            href={Fullstackresume}
+            href='/assets/resumes/Krishna_Darsh_E_K_Resume.pdf'
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-xl border p-4"

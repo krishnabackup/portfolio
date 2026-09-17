@@ -1,7 +1,4 @@
-import skillFlowImage from "../../public/assets/projects/skillflow.png"
-import  reflateImage from "../../public/assets/projects/reflate.png"
-import HDP from '../../public/assets/projects/HDP.png'
-import KeralaimImage from '../../public/assets/projects/Keralaim.png'
+
 export const profile = {
   name: 'Krishna Darsh E K',
   initials: 'KD',
@@ -95,18 +92,18 @@ export const projects = [
     description:
       'Built a responsive learning platform using React, Node.js, MongoDB, Tailwind CSS, and Zustand with JWT authentication and role-based learning workflows. Developed reusable dashboard, roadmap, course and quiz components with a paginated data view and REST API integration. Implemented YouTube learning progress tracking and certificate previews using browser Blob APIs. Integrated Google Gemini to generate personalized learning roadmaps and adaptive quizzes.',
     tags: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS', 'Gemini AI'],
-    image: skillFlowImage,
+    image: '/assets/projects/skillflow.png',
     demoUrl: 'https://skill-flow-tau.vercel.app/',
-    codeUrl: 'https://github.com/krishnabakup2002/SkillFlow.git',
+    codeUrl: 'https://github.com/krishnabackup/SkillFlow.git',
   },
   {
     name: 'Keralam : AI-Powered Citizen Platform',
     description:
       'Developed an AI-powered civic platform for government scheme discovery, complaint management, disaster alerts, and citizen assistance. The platform combines recommendation logic, AI-powered assistance, and multilingual support to improve citizen experience and access to public services.',
     tags: ['React Native', 'Node.js', 'Express.js', 'MongoDB', 'LLM'],
-    image : KeralaimImage,
+    image : '/assets/projects/Keralaim.png',
     demoUrl: '#',
-    codeUrl: 'https://github.com/krishnabakup2002/Keralam.git',
+    codeUrl: 'https://github.com/krishnabackup/Keralaim.git',
   },
   {
     name: 'Pneumonia Prediction from Chest X-Rays',
@@ -114,26 +111,26 @@ export const projects = [
       'Developed a deep learning image classification model using Python and TensorFlow to detect pneumonia from chest X-ray images. Performed data validation, exploratory analysis, preprocessing, and model evaluation to improve prediction accuracy.',
     tags: ['Python', 'Deep Learning', 'Computer Vision', 'TensorFlow'],
     demoUrl: '#',
-    codeUrl: 'https://github.com/krishnadarsh/Heart-Disease-Prediction-using-ML.git',
+    codeUrl: 'https://github.com/krishnabackup/Pneumonia-prediction-from-Xray-using-Deep-Learning',
   },
   {
     name: 'Heart Disease Prediction using ML',
     description:
       'Developed a machine learning classification model using Python to predict heart disease from user input. Performed data validation, exploratory analysis, preprocessing, and model evaluation and comparision to select best model.',
     tags: ['Python', 'Machine Learning', 'Classification', 'FAST API' , 'React'],
-    image : HDP,
+    image : '/assets/projects/HDP.png',
     demoUrl: 'https://heart-disease-prediction-using-ml-nine.vercel.app',
-    codeUrl: 'https://github.com/krishnadarsh/Heart-Disease-Prediction-using-ML.git',
+    codeUrl: 'https://github.com/krishnabackup/Heart-Disease-Prediction-using-ML.git',
   },
   {
     name: 'Reflate : Department Feast website',
     description:
       'Developed a website for ecnomics department feast to get the participant enroll in different events.Backend is connected with google docs.',
     tags: ['HTML', 'CSS' ,'JS'],
-    image: reflateImage, 
+    image: '/assets/projects/reflate.png', 
     liveDemo : true,
     demoUrl: 'https://reflatefeast.netlify.app/',
-    codeUrl: 'https://github.com/krishnadarsh/Heart-Disease-Prediction-using-ML.git',
+    codeUrl: 'https://github.com/krishnabackup/reflate.github.io',
   }
 ]
 
