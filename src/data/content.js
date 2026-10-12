@@ -62,7 +62,7 @@ export const about = {
     'I enjoy building complete solutions that combine user-facing interfaces, backend systems, and AI capabilities. From React and Node.js applications to machine learning workflows and LLM-integrated features, I focus on delivering practical products that are scalable, maintainable, and useful in the real world.',
   ],
   stats: [
-    { value: '2+', label: 'years of hands-on experience' },
+    { value: '1+', label: 'years of hands-on experience' },
     { value: '8+', label: 'AI / ML and full-stack projects' },
     { value: '3', label: 'core domains delivered' },
   ],
